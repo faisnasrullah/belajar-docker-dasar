@@ -1,0 +1,24 @@
+DOCKER IMAGE
+============
+- adalah mirip seperti installer aplikasi, dimana didalam DOCKER IMAGE
+  terdapat aplikasi dan dependency
+- sebelum kita bisa menjalankan aplikasi di Docker, kita perlu mamastikan
+  memiliki Docker Image aplikasi tersebut.
+
+
+MELIHAT DOCKER IMAGE :
+- untuk melihat DOCKER IMAGE yang terdapat didalam Docker Daemon,
+  kita bisa menggunakan perintah :
+  docker image ls
+
+
+DOWNLOAD DOCKER IMAGE :
+- untuk download DOCKER IMAGE dari Docker Registry, kita bisa menggunakan perintah :
+  docker image pull namaimage:tag
+- kita bisa mencari DOCKER IMAGE yang ingin kita download di https://hub.docker.com/
+
+
+MENGHAPUS DOCKER IMAGE :
+- jika kita tidak ingini menggunakan DOCKER IMAGE yang sudah kita download, kita bisa
+  menghapusnya dengan perintah :
+  docker image rm namaimage:tag
