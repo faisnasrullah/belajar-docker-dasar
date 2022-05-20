@@ -1,0 +1,14 @@
+DOCKER REGISTRY
+===============
+- adalah tempat kita menyimpan Docker Image
+- ketika Docker Image kita sudah tersimpan di DOCKER REGISTRY,
+  maka kita bisa menggunakan Docker Image menggunakan Docker Daemon
+  dimanapun selama bisa terkoneksi ke DOCKER REGISTRY.
+
+
+COMTOH DOCKER REGISTRY :
+1. Docker Hub -> [yang akan kita pakai untuk belajar]
+2. Digital Ocean Container Registry
+3. Google Cloud Container Registry
+4. Amazon Elastic Container Registry
+5. Azure Container Registry
