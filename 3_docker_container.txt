@@ -1,0 +1,55 @@
+DOCKER CONTAINER
+================
+- jika docker image mirip seperti installer aplikasi,
+  maka DOCKER CONTAINER mirip seperti hasil installernya
+- satu docker image bisa digunakan untuk membuat beberapa DOCKER CONTAINER
+  asalkan nama DOCKER CONTAINER nya berbeda
+- jika kita sudah membuat DOCKER CONTAINER, maka Docker Image yang digunakan
+  tidak bisa dihapus, hal ini dikarenakan sebenarnya DOCKER CONTAINER tidak
+  meng-copy isi dari Docker Image, tetapi hanya menggunakan isinya saja.
+
+
+STATUS CONTAINER :
+- saat kita membuat DOCKER CONTAINER, secara default DOCKER CONTAINER tersebut
+  tidak akan berjalan
+- mirip seperti kita menginstall aplikasi, jika tidak kita jalankan, maka aplikasi
+  tersebut tidak akan berjalan, begitu juga DOCKER CONTAINER
+- oleh karena itu, setelah membuat DOCKER CONTAINER kita perlu menjalankannya terlebih
+  dahulu jika kita ingin menggunakan DOCKER CONTAINER tersebut.
+
+
+MELIHAT CONTAINER :
+- untuk melihat semua DOCKER CONTAINER (baik itu yang sedang berjalan maupun tidak)
+  kita bisa menggunakan perintah :
+  docker container ls -a
+
+
+MEMBUAT CONTAINER :
+- untuk membuat DOCKER CONTAINER, kita bisa menggunakan perintah :
+  docker container create --name namacontainer namaimage:tag
+  contoh :
+  docker container create --name contohredis redis:latest
+- jika ketika kita membuat CONTAINER dan image yang kita gunakan
+  ternyata belum didownload, maka docker akan secara otomatis
+  mendownloadnya terlebih dahulu
+
+
+MENJALANKAN CONTAINER :
+- untuk menjalankan DOCKER CONTAINER, kita bisa menggunakan perintah :
+  docker container start containerid (or) containername
+  contoh :
+  docker container start contohredis
+
+
+MENGHENTIKAN CONTAINER :
+- untuk menghentikan DOCKER CONTAINER, kita bisa menggunakan perintah :
+  docker container stop containerid (or) containername
+  contoh :
+  docker container stop contohredis
+
+
+MENGHAPUS CONTAINER :
+- untuk menghapus DOCKER CONTAINER, kita bisa menggunakan perintah :
+  docker container rm containerid (or) containername
+  contoh :
+  docker container rm contohredis
